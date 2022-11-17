@@ -64,7 +64,7 @@ pacstrap /mnt base base-devel
 genfstab -U /mnt >> /mnt/etc/fstab
 cp tz.tmp /mnt/tzfinal.tmp
 rm tz.tmp
-curl https://raw.githubusercontent.com/terra1122/LARBS/master/testing/chroot.sh > /mnt/chroot.sh && arch-chroot /mnt bash chroot.sh && rm /mnt/chroot.sh
+#curl https://raw.githubusercontent.com/terra1122/LARBS/master/testing/chroot.sh > /mnt/chroot.sh && arch-chroot /mnt bash chroot.sh && rm /mnt/chroot.sh
 
 ### BEGIN
 arch-chroot /mnt echo "root:$pass" | chpasswd
