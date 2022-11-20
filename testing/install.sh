@@ -86,7 +86,7 @@ systemctl start NetworkManager
 pacman --noconfirm --needed -S grub && grub-install --target=i386-pc /dev/sda && grub-mkconfig -o /boot/grub/grub.cfg
 
 pacman --noconfirm --needed -S dialog
-larbs() { curl -O https://raw.githubusercontent.com/terra1122/LARBS/master/larbs.sh && bash larbs.sh ;}
+larbs() { curl -O https://raw.githubusercontent.com/terra1122/larbs.sh && bash larbs.sh ;}
 dialog --title "Install all the stuff" --yesno "This install script will easily let you install all the apps.\n\nIf you'd like to install this, select yes, otherwise select no.\n"  15 60 && larbs
 ### END
 
